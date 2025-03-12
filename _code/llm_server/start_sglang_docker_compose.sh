@@ -1,0 +1,1 @@
+docker compose -f sglang-service.yaml up -d
