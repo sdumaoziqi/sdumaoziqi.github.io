@@ -1,7 +1,13 @@
 docker run     \
     --runtime nvidia --gpus all \
     -v ~/.cache/huggingface:/root/.cache/huggingface \
-    -p 8000:8000 \
+    -v /data1:/data1 \
+    -p 23451:23451 \
     --ipc=host \
     vllm/vllm-openai:latest \
-    --model mistralai/Mistral-7B-v0.1
+    --model /data1/models--deepseek-ai--DeepSeek-R1/snapshots/test \
+    --served-model-name DeepSeek-R1\
+    --port 23451 \
+    --host 0.0.0.0  \
+    -tp 8 \
+    --trust-remote-code

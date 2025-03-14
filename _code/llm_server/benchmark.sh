@@ -1,1 +1,1 @@
-python3 -m sglang.bench_one_batch_server --model None --base-url http://127.0.0.1:23451 --batch-size 1 10 50 100 --input-len 1000 5000 20000 --output-len 1 1000 5000
+python3 -m sglang.bench_one_batch_server --model None --base-url http://127.0.0.1:23451/v1 --batch-size 1 10 50 100 --input-len 1000 5000 20000 --output-len 1 1000 5000
