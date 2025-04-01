@@ -43,3 +43,7 @@ validation-report.json
 node_modules
 
 a.out
+*.pyc
+trace*.json
+
+docker_images/
