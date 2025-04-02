@@ -47,3 +47,5 @@ a.out
 trace*.json
 
 docker_images/
+_code/sam/
+test.db
